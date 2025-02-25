@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Space Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0a192f, #112240);
+            color: #ccd6f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            color: #64ffda;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 37, 100, 0.5);
+            padding: 2rem 5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: fit-content;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #64ffda;
+            font-weight: bold;
+            position: relative;
+            right: 5rem;
+        }
+
+        input {
+            padding: 0.8rem;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ccd6f6;
+            border-radius: 10px;
+            outline: none;
+            width: 100%;
+            transition: 0.3s;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.02);
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #64ffda, #48e5c2);
+            color: #0a192f;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+            width: 100%;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #ff6b6b, #ff4040);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="/user/login" method="post">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+</body>
+
+</html>
