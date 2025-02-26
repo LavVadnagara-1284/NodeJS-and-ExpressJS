@@ -10,8 +10,8 @@ async function handleUserSignUp(req, res) {
         password,
     });
     console.log(`Name: ${name}, Email: ${email}, Password: ${password}`);
-    // return res.render('home');
-    return res.redirect('/');
+    return res.render('home');
+    // return res.redirect('/');
 }
 
 async function handleUserLogin(req, res) {
@@ -21,10 +21,8 @@ async function handleUserLogin(req, res) {
         error: 'Invalid credentials'
     });
 
-    const sessionID = uuidv4();
-    setUser(sessionID, user);
-    response.cookie('uid', sessionID);
-    // return res.render('home');
+    const token = setUser( user);
+    res.cookie('token', token);
     return res.redirect('/');
 }
 
