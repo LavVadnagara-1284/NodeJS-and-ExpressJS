@@ -1,6 +1,8 @@
 # VSCode settings
 .vscode/
 
+.env
+
 # Logs and debugging
 logs/
 *.log
