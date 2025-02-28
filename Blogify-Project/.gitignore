@@ -1,0 +1,59 @@
+# VSCode settings
+.vscode/
+
+.env
+
+# Logs and debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules
+node_modules/
+jspm_packages/
+bower_components/
+
+# Build and runtime files
+lib-cov/
+coverage/
+*.lcov
+dist/
+.next/
+.nuxt/
+out/
+.cache/
+.parcel-cache/
+.docusaurus/
+.serverless/
+
+# Process files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env*
+!.env.example  # Keep example env file for reference
+
+# Tool caches
+.npm/
+.eslintcache
+.stylelintcache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# REPL and editor files
+.node_repl_history
+.tern-port
+.vscode-test/
+
+# Miscellaneous
+*.tgz
+.lock-wscript

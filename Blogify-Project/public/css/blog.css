@@ -1,0 +1,119 @@
+.container {
+    margin-top: 2rem;
+    max-width: 800px;
+
+    h1 {
+        font-size: 2rem;
+        color: #64ffda;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .blog-coverimage-URL {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    pre {
+        background: #112240;
+        padding: 1rem;
+        border-radius: 10px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #e6e6e6;
+    }
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #112240;
+    border-radius: 12px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    span {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #e6e6e6;
+    }
+}
+
+.comments {
+    margin-top: 2rem;
+
+    h1 {
+        font-size: 1.5rem;
+        color: #64ffda;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        input {
+            background: #112240;
+            color: white;
+            padding: 0.8rem;
+            border: 2px solid #64ffda;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.3s ease;
+
+            &:focus {
+                border-color: #52e0c4;
+            }
+        }
+    }
+
+    .comment-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        background: #112240;
+        padding: 1rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+
+        .comment-content {
+            flex: 1;
+
+            span {
+                font-size: 1rem;
+                font-weight: bold;
+                color: #64ffda;
+            }
+
+            pre {
+                background: transparent;
+                padding: 0.5rem 0;
+                font-size: 1rem;
+                color: white;
+            }
+        }
+    }
+
+}
+
+.comment-profile-image-URL {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,61 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #112240 !important;
+    border-bottom: 2px solid #64ffda;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #64ffda !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #52e0c4 !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #64ffda !important;
+}
+
+/* Navbar Dropdown */
+.dropdown-menu {
+    background-color: #112240;
+    border: 1px solid #64ffda;
+}
+
+.dropdown-item {
+    color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #64ffda;
+    color: #112240;
+}
+
+/* Responsive Navbar Toggler */
+.navbar-toggler {
+    border-color: #64ffda;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Alert Box for Errors */
+.alert {
+    border-radius: 8px;
+    font-size: 1rem;
+}
